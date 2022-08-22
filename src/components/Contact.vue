@@ -26,7 +26,7 @@
                         <label for="name" class="text-briix-primary">Your Name</label>
                         <input id="name" class="rounded-lg mt-3 py-3 px-4 border focus:outline-briix-primary border-[#C7E7F4]" placeholder="Enter Your Name" type="text"/>
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col mt-5 lg:mt-0">
                         <label for="number" class="text-briix-primary">Your Number</label>
                         <input id="number" class="rounded-lg mt-3 py-3 px-4 border focus:outline-briix-primary border-[#C7E7F4]" placeholder="Enter Your Number" type="text"/>
                     </div>
