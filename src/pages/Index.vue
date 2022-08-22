@@ -1,33 +1,41 @@
 <template>
   <Layout>
+    <Hero />
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
+    <Section1 />
 
-    <h1 class="text-5xl text-red-400">Hello, world!</h1>
+    <Section2 />
 
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
+    <Section3 />
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs/" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+    <Section4 />
 
+    <Section5 />
+
+    <Section6 />
+
+    <OurTeam />
+
+    <Footer />
   </Layout>
 </template>
 
 <script>
+import Hero from '../components/Hero.vue';
+import Section1 from '../components/Section1.vue';
+import Section2 from '../components/Section2.vue';
+import Section3 from '../components/Section3.vue';
+import Footer from '../components/Footer.vue';
+import Section4 from '../components/Section4.vue';
+import Section5 from '../components/Section5.vue';
+import Section6 from '../components/Section6.vue';
+import OurTeam from '../components/OurTeam.vue';
+
 export default {
+  components: { Hero, Section1, Section2, Section3, Section4, Section5, Section6, Footer, OurTeam },
   metaInfo: {
-    title: 'Hello, world!'
-  }
+    title: 'Briix Properties Group',
+    
+  },
 }
 </script>
-
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>
