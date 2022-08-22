@@ -1,7 +1,7 @@
 <template>
     <section class="lg:min-h-[559px] py-[134px] briix-container bg-[#D9D9D9]">
         <h1 class="font-manrope text-center mb-12 font-extrabold text-5xl">Process</h1>
-        <div class="grid lg:gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div class="grid gap-4 lg:gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div v-for="i in cards" :key="i.id" class="bg-[#949494] rounded-lg p-6 min-h-[261px] min-w-[286px]">
                 <div>
                     <div class="w-[74px] h-[74px] bg-[#D9D9D9] rounded-full flex flex-col items-center justify-center">

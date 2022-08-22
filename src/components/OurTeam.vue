@@ -1,9 +1,9 @@
 <template>
     <section>
-        <section class="py-[200px] px-24 bg-white">
+        <section class="py-10 lg:py-[200px] px-4 lg:px-24 bg-white">
             <h1 class="font-manrope text-center mb-12 font-extrabold text-5xl">Our Team</h1>
         
-            <div class="grid gap-20 md:grid-cols-3 lg:grid-cols-5 mt-11">
+            <div class="grid gap-4 lg:gap-20 md:grid-cols-3 lg:grid-cols-5 mt-11">
                 <CardTeam  v-for="(team, idx) in teams" :team="team" :key="idx"/>
             </div>
         </section>
