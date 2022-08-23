@@ -27,32 +27,59 @@
         
         </section>
         <section class="briix-container w-full">
-            <!-- Table -->
-            <table class="table-auto mx-auto border-collapse border border-slate-400 hidden">
-                <thead>
-                    <tr>
-                        <th class="border border-slate-300"></th>
-                        <th class="border border-slate-300">GOP Sharing Model</th>
-                        <th class="border border-slate-300">Revenue Sharing Model</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td class="border border-slate-300">Owner</td>
-                        <td class="border border-slate-300">Malcolm Lockyer</td>
-                    </tr>
-                    <tr>
-                        <td class="border border-slate-300">Manager</td>
-                        <td class="border border-slate-300">The Eagles</td>
-                        <td class="border border-slate-300">1972</td>
-                    </tr>
-                </tbody>
-            </table>
-            <img class="mx-auto my-[134px]" src="/SS-02.png" alt="table-img">
+            <div class="grid lg:grid-cols-2 gap-8">
+                <CardTable v-for="content in contents" :key="content.id" :content="content"/>
+            </div>
         </section>
     </section>
 </template>
 
 <script>
-export default {}
+import CardTable from './CardTable.vue';
+
+export default {
+    data: () => ({
+        contents: [
+            {   id: 1,
+                title: "GOP Sharing Model",
+                subContent: [
+                    {
+                        title: "Owner",
+                        list: [
+                            "Operating costs are absorbed by profit sharing pool",
+                            "Requires owner to analyse all expenses."
+                        ]
+                    },
+                    {
+                        title: "Manager",
+                        list: [
+                            "Manager benefits from same profit sharing pool as owner"
+                        ]
+                    }
+                ]
+            },
+            {
+                id: 2,
+                title: "Revenue Sharing Model",
+                subContent: [
+                    {
+                        title: "Owner",
+                        list: [
+                            "Owner income generated from top-line revenue.",
+                            "Only requires owner to analyse occupancy and ADR."
+                        ]
+                    },
+                    {
+                        title: "Manager",
+                        list: [
+                            "Manager absorbs all operating costs.",
+                            "Manager is structurally incentivised to maximize cost efficiency."
+                        ]
+                    }
+                ]
+            },
+        ]
+    }),
+    components: { CardTable }
+}
 </script>
