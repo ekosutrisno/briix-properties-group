@@ -17,6 +17,7 @@
     <Contact />
 
     <Footer />
+
   </Layout>
 </template>
 
