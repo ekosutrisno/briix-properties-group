@@ -1,14 +1,10 @@
 <template>
     <section>
-        <section class="lg:min-h-[633px] py-[134px] briix-container bg-white">
-            <div class="font-manrope text-center first-letter:font-extrabold text-5xl">Operation</div>
-            <div class="grid lg:grid-cols-2  mt-[75px] ">
+        <section class="lg:min-h-[633px] py-[134px] briix-container bg-briix-blue-7">
+            <div class="font-manrope text-center font-bold text-white text-5xl">Operations</div>
+            <div class="grid mt-[75px] font-manrope">
                 <div>
-                    <div class="lg:h-full lg:w-[498px] bg-[#949494]">
-                    </div>
-                </div>
-                <div>
-                    <div class="font-manrope text-xl text-gray-600 leading-[34px]">
+                    <div class="font-manrope text-xl text-white leading-[34px]">
                         <p>
                         Building a property development is only half the challenge. Whether the intention is to sell the completed units or to hold the asset for the long term - a comprehensive operational strategy is required in order to realise the value created.
                         <br class="hidden lg:block"/>
@@ -16,17 +12,37 @@
                         BPG is the ideal partner for hotel and property management solutions. Our specialised team of management and marketing experts have the track record, experience and infrastructure required in order to deliver consistent, market leading asset performance.
                         <br class="hidden lg:block"/>
                         <br class="hidden lg:block"/>
-                        <span class="text-briix-primary font-bold">BPG provides a better deal for our owner clients</span>
+                        <span class="text-briix-blue-3 text-[28px] uppercase font-bold">BPG provides a better deal for our owner clients</span>
                         <br class="hidden lg:block"/>
                         <br class="hidden lg:block"/>
                         Our unique revenue sharing model has been designed to more efficiently align the interests of both owner and manager.
                         </p>
                     </div>
+                    <div class="mt-12">
+                        <h1 class="uppercase text-xl text-[28px] text-briix-blue-3 leading-[34px] font-bold">Management Brands</h1>
+
+                        <div class="grid lg:grid-cols-2 lg:gap-10 mt-4">
+
+                            <div class="rounded-xl overflow-hidden group relative cursor-pointer">
+                                <img class="w-full h-full object-cover group-hover:scale-125 transition" src="/VillaG.png" alt="villa-ex-1">
+                                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                    <img width="258" src="/logo/siwa-logo.png" alt="siwa-logo">  
+                                </div>
+                            </div>
+                            <div class="rounded-xl overflow-hidden group relative">
+                                <img class="w-full h-full object-cover group-hover:scale-125 transition" src="/KuVilla4.png" alt="villa-ex-2">
+                                <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                    <img width="94" src="/logo/ku-logo.png" alt="ku-logo">  
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
                 </div>
             </div>
         
         </section>
-        <section class="briix-container w-full">
+        <section class="briix-container w-full py-[134px]">
             <div class="grid lg:grid-cols-2 gap-8">
                 <CardTable v-for="content in contents" :key="content.id" :content="content"/>
             </div>

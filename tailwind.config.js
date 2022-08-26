@@ -16,6 +16,7 @@ module.exports = {
         "briix-white": "#FFFFFF",
         "briix-body": "#666666",
         "briix-blue-1": "#EAF6FB",
+        "briix-blue-3": "#99D2EB",
         "briix-blue-6": "#135F7F",
         "briix-blue-7": "#0C3F54",
         "briix-grey-2": "#E3E3E3",
