@@ -1,5 +1,6 @@
 <template>
-    <section class="lg:min-h-[633px] py-[134px] briix-container bg-briix-blue-7">
+    <section class="relative overflow-hidden lg:min-h-[633px] py-[134px] briix-container bg-briix-blue-7">
+        <SeluetSocial class="h-auto w-auto absolute inset-0"/>
         <h1 class="font-manrope text-center mb-12 font-extrabold text-5xl text-white">Social Responsibility</h1>
         <div class="grid lg:grid-cols-2">
             <div>
@@ -24,5 +25,6 @@
 
 <script>
 import EsgIlustration from './svg/EsgIlustration.vue';
-export default { components: { EsgIlustration } }
+import SeluetSocial from './svg/SeluetSocial.vue';
+export default { components: { EsgIlustration, SeluetSocial } }
 </script>

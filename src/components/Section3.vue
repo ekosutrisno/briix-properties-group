@@ -1,8 +1,9 @@
 <template>
     <section>
-        <section class="lg:min-h-[633px] py-[134px] briix-container bg-briix-blue-7">
+        <section class="lg:min-h-[633px] overflow-hidden relative py-[134px] briix-container bg-briix-blue-7">
+            <SeluetOperation class="absolute inset-0"/>
             <div class="font-manrope text-center font-bold text-white text-5xl">Operations</div>
-            <div class="grid mt-[75px] font-manrope">
+            <div class="grid mt-[75px] font-manrope relative">
                 <div>
                     <div class="font-manrope text-xl text-white leading-[34px]">
                         <p>
@@ -52,6 +53,7 @@
 
 <script>
 import CardTable from './CardTable.vue';
+import SeluetOperation from './svg/SeluetOperation.vue';
 
 export default {
     data: () => ({
@@ -96,6 +98,6 @@ export default {
             },
         ]
     }),
-    components: { CardTable }
+    components: { CardTable, SeluetOperation }
 }
 </script>

@@ -1,6 +1,7 @@
 <template>
-    <section class="lg:min-h-[769px] py-10 lg:py-[85px] briix-container bg-[#EAF6FB]">
-        <div class="grid lg:grid-cols-2 font-manrope">
+    <section class="lg:min-h-[769px] relative py-10 overflow-hidden lg:py-[85px] briix-container bg-[#EAF6FB]">
+        <SeluetBlue class="absolute inset-0"/>
+        <div class="grid lg:grid-cols-2 font-manrope relative">
             <div class="lg:border-r lg:border-r-[#C7E7F4] lg:pr-20">
                 <div class="text-5xl mb-10 font-semibold">Contact Us</div>
                 <div>
@@ -56,7 +57,8 @@
 </template>
 
 <script>
+import SeluetBlue from './svg/SeluetBlue.vue';
     export default {
-        
-    }
+    components: { SeluetBlue }
+}
 </script>

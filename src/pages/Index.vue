@@ -12,8 +12,6 @@
 
     <Section5 />
 
-    <Section6 />
-
     <OurTeam />
 
     <Contact />
@@ -30,12 +28,11 @@ import Section3 from '../components/Section3.vue';
 import Footer from '../components/Footer.vue';
 import Section4 from '../components/Section4.vue';
 import Section5 from '../components/Section5.vue';
-import Section6 from '../components/Section6.vue';
 import OurTeam from '../components/OurTeam.vue';
 import Contact from '../components/Contact.vue';
 
 export default {
-  components: { Hero, Section1, Section2, Section3, Section4, Section5, Section6, Footer, OurTeam, Contact },
+  components: { Hero, Section1, Section2, Section3, Section4, Section5, Footer, OurTeam, Contact },
   metaInfo: {
     title: 'Briix Properties Group'
   },
