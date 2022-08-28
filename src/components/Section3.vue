@@ -2,27 +2,27 @@
     <section>
         <section class="lg:min-h-[633px] overflow-hidden relative py-[134px] briix-container bg-briix-blue-7">
             <SeluetOperation class="absolute inset-0"/>
-            <div class="font-manrope text-center font-bold text-white text-5xl">Operations</div>
-            <div class="grid mt-[75px] font-manrope relative">
+            <div class="font-manrope text-center font-bold text-white text-2xl lg:text-5xl">Operations</div>
+            <div class="grid mt-5 lg:mt-[75px] font-manrope relative">
                 <div>
-                    <div class="font-manrope text-xl text-white leading-[34px]">
+                    <div class="font-manrope lg:text-xl text-white leading-[34px]">
                         <p>
                         Building a property development is only half the challenge. Whether the intention is to sell the completed units or to hold the asset for the long term - a comprehensive operational strategy is required in order to realise the value created.
                         <br class="hidden lg:block"/>
                         <br class="hidden lg:block"/>
                         BPG is the ideal partner for hotel and property management solutions. Our specialised team of management and marketing experts have the track record, experience and infrastructure required in order to deliver consistent, market leading asset performance.
-                        <br class="hidden lg:block"/>
-                        <br class="hidden lg:block"/>
-                        <span class="text-briix-blue-3 text-[28px] uppercase font-bold">BPG provides a better deal for our owner clients</span>
-                        <br class="hidden lg:block"/>
-                        <br class="hidden lg:block"/>
+                        <br/>
+                        <br/>
+                        <span class="text-briix-blue-3 text-xl lg:text-[28px] uppercase font-bold">BPG provides a better deal for our owner clients</span>
+                        <br/>
+                        <br/>
                         Our unique revenue sharing model has been designed to more efficiently align the interests of both owner and manager.
                         </p>
                     </div>
                     <div class="mt-12">
-                        <h1 class="uppercase text-xl text-[28px] text-briix-blue-3 leading-[34px] font-bold">Management Brands</h1>
+                        <h1 class="uppercase text-xl lg:text-[28px] text-briix-blue-3 leading-[34px] font-bold">Management Brands</h1>
 
-                        <div class="grid lg:grid-cols-2 lg:gap-10 mt-4">
+                        <div class="grid gap-5 lg:grid-cols-2 lg:gap-10 mt-4">
 
                             <div class="rounded-xl overflow-hidden group relative cursor-pointer">
                                 <img class="w-full h-full object-cover group-hover:scale-125 transition" src="/VillaG.png" alt="villa-ex-1">

@@ -1,10 +1,10 @@
 <template>
-    <section class="relative">
+    <section class="relative overflow-hidden">
         <!-- Ornament Section -->
         <CircleSeluet class="absolute opacity-75"/>
 
-        <section class="lg:min-h-[559px] relative lg:pb-[134px] lg:pt-[200px] briix-container">
-            <h1 class="font-manrope text-center mb-12 font-extrabold text-5xl">Process</h1>
+        <section class="lg:min-h-[559px] relative lg:pb-[134px] pt-20 lg:pt-[200px] briix-container">
+            <h1 class="font-manrope text-center mb-12 font-extrabold text-2xl lg:text-5xl">Process</h1>
             <div class="grid gap-4 lg:gap-8 md:grid-cols-2 lg:grid-cols-4">
                 <div v-for="i in cards" :key="i.id" class="bg-[#949494] rounded-lg p-6 min-h-[261px] min-w-[286px]">
                     <div>
@@ -28,11 +28,11 @@
 
         <section class="min-h-full lg:h-[852px] relative flex flex-col items-center justify-center">
             <div class="lg:mb-10">
-                <h1 class="font-manrope font-bold leading-[65px] text-5xl text-center">Briix Group</h1>    
+                <h1 class="font-manrope font-bold leading-[65px] text-2xl lg:text-5xl text-center">Briix Group</h1>    
             </div>
             <div class="w-full flex items-center justify-center relative">
-                <div class="w-full"></div>
-                <BriixGroup class="absolute z-20"/>
+                <div class="w-full hidden lg:block"></div>
+                <BriixGroup class="absolute z-20 top-0 lg:w-auto w-80"/>
                 <CicrleSeluetSm class="opacity-75"/>
             </div>
 
