@@ -4,9 +4,9 @@
         <div class="lg:h-[365px] lg:w-[498px] bg-[#949494]"></div>
     </div>
     <div>
-        <h1 class="font-manrope font-extrabold text-2xl lg:text-5xl">What We Do</h1>
+        <h1 class="font-manrope font-bold text-2xl lg:text-5xl">What We Do</h1>
         <div class="font-manrope lg:text-xl text-gray-600 leading-[34px]">
-            <p class="mt-2 lg:mt-6">BPG is a unique and integrated property development platform providing institutional investors and property developers with turnkey solutions for large scale real estate developments.</p>
+            <p class="mt-2 lg:mt-6 text-briix-body">BPG is a unique and integrated property development platform providing institutional investors and property developers with turnkey solutions for large scale real estate developments.</p>
             <ul class="mt-2 lg:mt-6 grid lg:grid-cols-2 gap-4">
                 <li class="inline-flex items-center space-x-4">
                     <ListStyle class="lg:w-auto w-6"/>

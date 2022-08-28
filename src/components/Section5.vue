@@ -1,21 +1,19 @@
 <template>
-    <section class="relative overflow-hidden">
+    <section class="relative overflow-hidden pb-40">
         <!-- Ornament Section -->
         <CircleSeluet class="absolute opacity-75"/>
 
-        <section class="lg:min-h-[559px] relative lg:pb-[134px] pt-20 lg:pt-[200px] briix-container">
-            <h1 class="font-manrope text-center mb-12 font-extrabold text-2xl lg:text-5xl">Process</h1>
-            <div class="grid gap-4 lg:gap-8 md:grid-cols-2 lg:grid-cols-4">
-                <div v-for="i in cards" :key="i.id" class="bg-[#949494] rounded-lg p-6 min-h-[261px] min-w-[286px]">
-                    <div>
-                        <div class="w-[74px] h-[74px] bg-[#D9D9D9] rounded-full flex flex-col items-center justify-center">
-                            <span>Icon</span>
-                        </div>
-                        <div class="text-white text-[32px] mt-6">
-                            <p class="leading-[42px]">{{ i.text }}</p>
-                        </div>
-                    </div>
-                </div>
+        <section class="lg:min-h-[559px] relative lg:pb-[134px] pt-20 lg:pt-[200px]">
+            <h1 class="font-manrope text-center mb-12 font-bold text-2xl lg:text-5xl">Process</h1>
+            
+            <div class="w-full">
+                <ClientOnly>
+                    <Carousel class="bg-transparent" paginationActiveColor="#1F9ED3" paginationColor="#9ee2fe" :paginationSize="10" easing="linear" :perPageCustom="[[384, 1], [448, 2], [512, 3]]" :navigationEnabled="true" :scrollPerPage="true">
+                        <Slide class="p-5 lg:p-10" v-for="(i, idx) in cards" :key="i.id">
+                            <CardProcess :data="i" :idx="idx"/>
+                        </Slide>
+                    </Carousel>
+                </ClientOnly>
             </div>
             <div class="flex items-center justify-center mt-20">
                 <div class="inline-flex items-center space-x-4">
@@ -45,6 +43,7 @@
 import BriixGroup from './svg/BriixGroup.vue';
 import CircleSeluet from './svg/CircleSeluet.vue';
 import CicrleSeluetSm from './svg/CicrleSeluetSm.vue';
+import CardProcess from './CardProcess.vue';
 export default {
     data: () => ({
         cards: [
@@ -66,6 +65,20 @@ export default {
             },
         ]
     }),
-    components: { BriixGroup, CircleSeluet, CicrleSeluetSm }
+    components: { 
+        BriixGroup, 
+        CircleSeluet, 
+        CicrleSeluetSm, 
+        CardProcess,
+        Carousel: () =>
+            import ('vue-carousel')
+            .then(m => m.Carousel)
+            .catch(),
+        Slide: () =>
+            import ('vue-carousel')
+            .then(m => m.Slide)
+            .catch()
+        }
 }
+
 </script>
